@@ -1,0 +1,465 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/public/watercolor-paper-texture_1194-5416.jpg");
+}
+
+@media (max-width: 810px) {
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+header #logo {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+@media (max-width: 810px) {
+  header #logo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+header #logo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 357px;
+}
+
+header #nav-bar {
+  width: 60%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media (max-width: 810px) {
+  header #nav-bar {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+header #nav-bar #nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+}
+
+@media (max-width: 810px) {
+  header #nav-bar #nav-links {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+header #nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+header li {
+  list-style: none;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+main {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  z-index: 200;
+}
+
+main h1 {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #ef1810;
+}
+
+@media (max-width: 810px) {
+  main h1 {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 486px) {
+  main h1 {
+    font-size: 1.3em;
+  }
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .anchor {
+  padding-top: 75px;
+  margin-top: -75px;
+}
+
+.video-container {
+  margin-bottom: 50px;
+  width: 300px;
+  height: 168px;
+  overflow: hidden;
+}
+
+@media (min-width: 320px) {
+  .video-container {
+    width: 300px;
+    height: 168px;
+  }
+}
+
+@media (min-width: 486px) {
+  .video-container {
+    width: 427px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 810px) {
+  .video-container {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+#features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+#features .feature-col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  grid-row-gap: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#features .feature-row {
+  display: -ms-grid;
+  display: grid;
+  max-width: 700px;
+  -ms-grid-columns: 15% 85%;
+      grid-template-columns: 15% 85%;
+  justify-items: start;
+}
+
+#features i {
+  font-size: 3.5em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #f79204;
+}
+
+@media (max-width: 486px) {
+  #features i {
+    font-size: 3em;
+  }
+}
+
+#features .feature-text {
+  padding-left: 10px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+#features h2 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.7em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #f48702;
+}
+
+@media (max-width: 486px) {
+  #features h2 {
+    font-size: 1.3em;
+  }
+}
+
+#features p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1em;
+  color: #3a3a3a;
+}
+
+@media (max-width: 486px) {
+  #features p {
+    font-size: 1em;
+  }
+}
+
+#features .footnote {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  color: #606060;
+}
+
+#pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+#pricing .pricing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 900px;
+  margin: -15px;
+}
+
+#pricing .empty {
+  width: 20px;
+}
+
+#pricing .price-box {
+  width: 250px;
+  height: 300px;
+  border: 2px solid #f79204;
+  border-radius: 5px;
+  position: relative;
+  margin: 15px;
+}
+
+#pricing .price-box h3 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #f48702;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+#pricing .price-box h4 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#pricing .price-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#pricing .price-box li {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#pricing .price-box button {
+  background-color: #f79204;
+  font-size: 1em;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px outset black;
+  position: absolute;
+  bottom: 15px;
+  left: 75px;
+}
+
+#email-signup {
+  margin-top: 15px;
+}
+
+#email-signup h5 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ef1810;
+}
+
+#email-signup #email {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #eaeaea;
+  margin-right: 10px;
+}
+
+#email-signup #submit {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 1px outset black;
+  background-color: rgba(239, 24, 16, 0.9);
+  color: black;
+}
+
+footer {
+  overflow: hidden;
+  position: relative;
+  min-height: 50px;
+  background-image: url("/public/watercolor-paper-texture_1194-5416.jpg");
+}
+
+footer #by-kevin {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+footer nav {
+  display: inline;
+  float: right;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+footer nav #nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+footer nav .nav-link {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer p {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #303030;
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */

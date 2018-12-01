@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+// Fixed Header as navigation //
+header {
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 5px;
+  flex-direction: row;
+  min-height: 50px;
+  align-items: center;
+  background-image: url("/public/watercolor-paper-texture_1194-5416.jpg");
+  @media (max-width: 810px) {
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: center;
+  }
+
+  // Logo div with logo image //
+  #logo {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    @media (max-width: 810px) {
+      width: 100%;
+      justify-content: center;
+    }
+    // Logo image //
+    img {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      max-width: 357px;
+    }
+  }
+
+  // Navigation links nav//
+  #nav-bar {
+    width: 60%;
+    justify-content: end;
+
+    @media (max-width: 810px) {
+      width: 100%;
+      justify-content: center;
+    }
+    // ul for links //
+    #nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style-type: none;
+      -webkit-padding-start: 0px;
+
+      @media (max-width: 810px) {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 500;
+      font-size: 1.2em;
+    }
+  }
+
+  // li navigation links //
+  li {
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+main {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  z-index: 200;
+
+  //Guaranteed knockout of sleep!
+  h1 {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #ef1810;
+    @media (max-width: 810px) {
+      font-size: 1.7em;
+    }
+    @media (max-width: 486px) {
+      font-size: 1.3em;
+    }
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+  }
+
+  //Offset jump-to-anchors
+  .anchor {
+    padding-top: 75px;
+    margin-top: -75px;
+  }
+}
+
+//Video div with iframe
+.video-container {
+  margin-bottom: 50px;
+  width: 300px;
+  height: 168px;
+  overflow: hidden;
+
+  @media (min-width: 320px) {
+    width: 300px;
+    height: 168px;
+  }
+
+  @media (min-width: 486px) {
+    width: 427px;
+    height: 240px;
+  }
+
+  @media (min-width: 810px) {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+// Features section //
+#features {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  .feature-col {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .feature-row {
+    display: grid;
+    max-width: 700px;
+    grid-template-columns: 15% 85%;
+    justify-items: start;
+  }
+
+  i {
+    font-size: 3.5em;
+    justify-self: center;
+    align-self: center;
+    color: #f79204;
+    @media (max-width: 486px) {
+      font-size: 3em;
+    }
+  }
+
+  .feature-text {
+    padding-left: 10px;
+    align-self: start;
+  }
+  h2 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #f48702;
+    @media (max-width: 486px) {
+      font-size: 1.3em;
+    }
+  }
+
+  p {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1em;
+    color: #3a3a3a;
+    @media (max-width: 486px) {
+      font-size: 1em;
+    }
+  }
+
+  .footnote {
+    font-size: 0.7em;
+    line-height: 0.7em;
+    color: #606060;
+  }
+}
+
+//Pricing Section
+#pricing {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  .pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    margin: -15px;
+  }
+
+  .empty {
+    width: 20px;
+  }
+
+  .price-box {
+    width: 250px;
+    height: 300px;
+    border: 2px solid #f79204;
+    border-radius: 5px;
+    position: relative;
+    margin: 15px;
+
+    //Clock product title
+    h3 {
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 700;
+      font-size: 1.2em;
+      margin-top: 0px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      color: #f48702;
+      background-color: #eaeaea;
+      text-align: center;
+    }
+    // Price
+    h4 {
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 700;
+      font-size: 1.4em;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    // Features
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    button {
+      background-color: #f79204;
+      font-size: 1em;
+      padding: 10px;
+      width: 100px;
+      border-radius: 5px;
+      border: 1px outset black;
+      position: absolute;
+      bottom: 15px;
+      left: 75px;
+    }
+  }
+}
+
+//Email section
+#email-signup {
+  margin-top: 15px;
+
+  // Sign up title
+  h5 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ef1810;
+  }
+  //Email input
+  #email {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #eaeaea;
+    margin-right: 10px;
+  }
+  //submit button
+  #submit {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 1px outset black;
+    background-color: rgba(239, 24, 16, 0.9);
+    color: black;
+  }
+}
+
+//Footer with link
+footer {
+  overflow: hidden;
+  position: relative;
+  min-height: 50px;
+  background-image: url("/public/watercolor-paper-texture_1194-5416.jpg");
+
+  #by-kevin {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+  // Navbar
+  nav {
+    display: inline;
+    float: right;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: "Alegreya Sans", sans-serif;
+      font-weight: 500;
+      font-size: 1.2em;
+    }
+    // ul navigation links
+    #nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 0px;
+      margin-top: 5px;
+    }
+
+    // li navigation links //
+    .nav-link {
+      list-style: none;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  // Copyright
+  p {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #303030;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+}
