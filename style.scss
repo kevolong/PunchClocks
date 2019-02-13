@@ -16,7 +16,7 @@ header {
   flex-direction: row;
   min-height: 50px;
   align-items: center;
-  background-image: url("https://kevinandrewlong.com/PunchClocks/watercolor-paper-texture_1194-5416.jpg");
+  background-image: url(watercolor-paper-texture_1194-5416.jpg);
   @media (max-width: 810px) {
     flex-wrap: wrap;
     padding-left: 0px;
@@ -327,7 +327,7 @@ footer {
   overflow: hidden;
   position: relative;
   min-height: 50px;
-  background-image: url("/public/watercolor-paper-texture_1194-5416.jpg");
+  background-image: url(watercolor-paper-texture_1194-5416.jpg);
 
   #by-kevin {
     display: inline;
